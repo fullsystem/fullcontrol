@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700|Lobster&display=swap');
+
+$font-title: 'Lobster', cursive;
+$font-text: 'Fira Sans', sans-serif;
+
+$color-title: #2d5830;
+$color-text: #7f7f7f;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+body, html {
+  font-size: 16px;
+  height: 100%;
+
+  .flex-container {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-align-content: center;
+    align-content: center;
+
+    height: 100vh;
+
+    .bg {
+      background-image: url(https://images.unsplash.com/photo-1495401246624-593eb4b920ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60);
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 80%;
+      margin: 0 auto;
+
+      .brand {
+        font-family: $font-title;
+        margin-bottom: 50px;
+        color: $color-title;
+        font-size: 3rem;
+      }
+
+      .description {
+        font-family: $font-text;
+        margin-bottom: 20px;
+        color: $color-text;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      .is-invalid {
+        background: rgba(243, 90, 91, 0.14) !important;
+      }
+
+      .invalid-feedback {
+        font-family: "Helvetica Neue", sans-serif;
+        color: rgba(243, 90, 91, 0.60);
+        font-size: .8rem;
+      }
+
+      .input {
+        background: darken(#fff, 9%);
+        font-family: $font-text;
+        line-height: 2.1rem;
+        color: $color-text;
+        border-radius: 3px;
+        padding: 10px 15px;
+        font-size: 1.1rem;
+        font-weight: 300;
+        border: none;
+        width: 100%;
+      }
+
+      .link {
+        padding: 10px 5px;
+        display: block;
+
+        a {
+          font-family: $font-text;
+          text-decoration: none;
+          color: $color-text;
+
+          &:hover {
+            color: darken($color-text, 30%);
+          }
+        }
+      }
+
+      .divider {
+        border-top: 1px dotted lighten($color-text, 30%);
+        margin-top: 2rem;
+      }
+
+      .thin {
+        font-family: $font-text;
+        font-size: 1rem !important;
+      }
+
+      .actions {
+        display: flex;
+        width: 100%;
+      }
+
+      .btn {
+        background: $color-title;
+        font-family: $font-text;
+        padding: .7rem 3rem;
+        border-radius: 3px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+      }
+
+      .btn-link {
+        background: none;
+        font-family: $font-text;
+        color: $color-title;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.d-inline {
+  display: inline !important;
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+@for $i from 0 through 100 {
+  .col-#{$i} {
+    flex-basis: round(percentage($i/100)) !important;
+    width: round(percentage($i/100)) !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+}

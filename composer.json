@@ -1,0 +1,26 @@
+{
+  "name": "fullsystem/skeleton",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Renato Dehnhardt",
+      "email": "renatotkd@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Skeleton\\": "src/"
+    }
+  },
+  "require": {
+    "rdehnhardt/laravel-porto": "dev-master"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Skeleton\\SkeletonServiceProvider",
+        "Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider"
+      ]
+    }
+  }
+}
