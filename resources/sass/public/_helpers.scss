@@ -1,0 +1,26 @@
+@import "variables";
+
+.full-height { height: 100vh; }
+
+.background-title { background-color: $color-title; }
+.background-text { background-color: $color-text; }
+
+.color-title { color: $color-title; }
+.color-text { color: $color-text; }
+
+.font-title { font-family: $font-title; }
+.font-text { font-family: $font-text; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.d-inline { display: inline !important; }
+.d-inline-flex { display: inline-flex !important; }
+.d-inline-block { display: inline-block !important; }
+
+input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

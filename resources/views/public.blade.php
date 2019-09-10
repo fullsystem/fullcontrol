@@ -9,15 +9,17 @@
 @endpush
 
 @section('page-content')
-    <div class="flex-container">
-        <div class="flex-item col-70 bg"></div>
-        <div class="flex-item col-30">
-            <div class="container">
-                <p class="brand">{{ config('app.name', 'Skeleton') }}</p>
-                <p class="description">@yield('page-description')</p>
+    <section class="wrapper full-height">
+        <div class="image"></div>
+        <div class="page full-height">
+            <header>{{ config('app.name', 'Skeleton') }}</header>
 
+            <main>
+                <cite>@yield('page-description')</cite>
                 @yield('content')
-            </div>
+            </main>
+
+            <footer>@yield('footer')</footer>
         </div>
-    </div>
+    </section>
 @endsection

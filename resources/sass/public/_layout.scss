@@ -1,0 +1,73 @@
+@import "variables";
+
+.wrapper {
+  width: 100%;
+
+  .image {
+    background: url($bg-image) center;
+    background-size: cover;
+  }
+
+  header, main, footer {
+    width: $container-width;
+  }
+
+  header {
+    font-family: $font-title;
+    color: $color-title;
+    font-size: 3rem;
+  }
+
+  main {
+    font-family: $font-text;
+    color: $color-text;
+    font-size: 1.2rem;
+
+    cite {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      display: block;
+    }
+
+    a {
+      color: $color-text;
+      font-weight: 400;
+
+      &:hover {
+        color: darken($color-text, 15%);
+      }
+    }
+
+    input {
+      background: lighten($color-text, 45%);
+      font-family: $font-text;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 1rem;
+    }
+
+    button {
+      color: lighten($color-title, 70%);
+      background: $color-title;
+      font-family: $font-text;
+      padding: .8rem 0;
+      border-radius: 5px;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+
+  footer {
+    a {
+      font-family: $font-text;
+      color: $color-text;
+      font-weight: 700;
+
+      &:hover {
+        color: darken($color-text, 30%);
+      }
+    }
+  }
+}

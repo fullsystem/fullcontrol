@@ -9,6 +9,10 @@
                         <i class="nav-icon fas fa-th"></i>
                         <p>Simple Link</p>
                     </a>
+                    <a class="nav-link" href="{{ route('logout') }}">
+                        <i class="fas fa-th"></i>
+                        <p>Logout</p>
+                    </a>
                 </li>
             </ul>
         </nav>

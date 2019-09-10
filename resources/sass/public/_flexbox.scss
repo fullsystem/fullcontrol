@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .image {
+    flex: 0 0 70%;
+  }
+
+  .page {
+    flex: 0 0 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
