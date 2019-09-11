@@ -1,10 +1,14 @@
 <?php
 
 return [
-    'assets' => [
-        'automatically' => true,
-        'public' => [
+    'public' => [
+        'assets' => [
+            'automatically' => true,
             'image' => '/skeleton/img/public-image.jpg'
+        ],
+        'credits' => [
+            'url' => 'https://instagram.com/renato.dehnhardt',
+            'text' => 'Renato Dehnhardt',
         ]
     ]
 ];

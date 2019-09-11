@@ -1,0 +1,22 @@
+@import "../utils/queries";
+
+body {
+  height: 100vh;
+  display: flex;
+
+  aside {
+    flex: 0 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+
+    nav {
+
+    }
+  }
+
+  main {
+    flex: 0 0 85%;
+  }
+}

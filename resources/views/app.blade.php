@@ -3,36 +3,22 @@
 @section('body-class', 'hold-transition sidebar-mini')
 
 @section('page-content')
-    <div class="wrapper">
-        @include('skeleton::app.sidebar')
-        @include('skeleton::app.navbar')
+    <aside>
+        <section class="brand">{{ config('app.name', 'Skeleton') }}</section>
 
-        <div class="content-wrapper">
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">@yield('page-title')</h1>
-                        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Menu Item</a></li>
+                <li><a href="#">Menu Item</a></li>
+            </ul>
+        </nav>
 
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                @yield('breadcrumbs')
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="bottom">
+            <a href="/logout">Logout</a>
+        </section>
+    </aside>
 
-            <div class="content">
-                <div class="container-fluid">
-                    @yield('content')
-                </div>
-            </div>
-        </div>
-
-        @include('skeleton::app.footer')
-    </div>
+    <main>MAIN</main>
 @endsection
 
 @push('styles')

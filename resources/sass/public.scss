@@ -1,8 +1,8 @@
 @import "~super-reset-css/super-reset";
 
-@import "public/variables";
-@import "public/queries";
+@import "variables";
 
 @import "public/flexbox";
 @import "public/layout";
-@import "public/helpers";
+
+@import "utils/helpers";

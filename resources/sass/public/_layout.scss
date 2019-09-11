@@ -1,10 +1,26 @@
-@import "variables";
-@import "queries";
+@import "../utils/queries";
+@import "../variables";
 
 .wrapper {
   .image {
     background-position: center;
     background-size: cover;
+
+    .credits {
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(0, 0, 0, 0.2);
+      font-family: $font-text;
+      font-size: .8rem;
+      padding: 10px;
+
+      a {
+        color: rgba(255, 255, 255, 0.6);
+
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
   }
 
   header, main, footer {
@@ -17,7 +33,7 @@
 
   header {
     font-family: $font-title;
-    color: $color-title;
+    color: $brand-color;
     font-size: 3rem;
   }
 
@@ -44,19 +60,19 @@
     }
 
     input {
-      background-color: lighten($color-text, 45%);
+      background-color: lighten($brand-color, 45%);
+      padding: 1.2rem 1rem;
       line-height: 1.1rem;
-      color: $color-text;
+      color: $brand-color;
       font-weight: 700;
       margin-top: 1rem;
       font-size: 1rem;
-      padding: 1rem;
     }
 
     button {
-      border: 2px solid $color-title;
+      border: 2px solid $brand-color;
       text-transform: lowercase;
-      color: $color-title;
+      color: $brand-color;
       margin-top: 1rem;
       cursor: pointer;
       display: block;
@@ -64,8 +80,8 @@
       width: 100%;
 
       &:hover {
-        color: lighten($color-title, 50%);
-        background: $color-title;
+        color: lighten($brand-color, 50%);
+        background: $brand-color;
       }
     }
 
@@ -93,4 +109,70 @@
       }
     }
   }
+}
+
+.background-title {
+  background-color: $brand-color;
+}
+
+.background-text {
+  background-color: $color-text;
+}
+
+.color-title {
+  color: $brand-color;
+}
+
+.color-text {
+  color: $color-text;
+}
+
+.font-title {
+  font-family: $font-title;
+}
+
+.font-text {
+  font-family: $font-text;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.divider {
+  border-color: lighten($color-text, 30%);
+  border-style: double;
+  border-right: none;
+  border-left: none;
+  margin: 2rem auto;
+  height: 5px;
+  width: 70%;
+}
+
+.btn-link {
+  display: inline-block !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  &:hover {
+    color: $brand-color !important;
+    background: none !important;
+  }
+}
+
+.alert {
+  background: lighten($color-text, 45%);
+  margin-bottom: 1rem;
+  display: block;
+  padding: 1rem;
+}
+
+.alert-success {
+  background: $color-success !important;
+  color: darken($color-success, 55%);
 }

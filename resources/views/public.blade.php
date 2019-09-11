@@ -10,7 +10,13 @@
 
 @section('page-content')
     <section class="wrapper full-height">
-        <div class="image" style="background-image: url('{{ config('skeleton.assets.public.image') }}')"></div>
+        <div class="image" style="background-image: url('{{ config('skeleton.public.assets.image') }}')">
+            @if (config('skeleton.public.credits.url', null))
+                <section class="credits">
+                    Photo Credits: <a href="{{ config('skeleton.public.credits.url') }}" target="_blank">{{ config('skeleton.public.credits.text') }}</a>
+                </section>
+            @endif
+        </div>
         <div class="page full-height">
             <header>{{ config('app.name', 'Skeleton') }}</header>
 

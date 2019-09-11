@@ -11,6 +11,8 @@
 
 <body class="@yield('body-class') @yield('page-name')">
     @yield('page-content')
-    @stack('scripts')
 </body>
+
+@stack('scripts')
+
 </html>

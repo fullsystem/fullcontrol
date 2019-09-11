@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Lobster&display=swap');
 
+$brand-color: #7960A4 !default;
+
+// Fonts
 $font-title: 'Lobster', cursive;
 $font-text: 'Roboto', sans-serif;
 
-$color-title: #7960A4;
-$color-text: #7f7f7f;
+// Colors
+$color-background: lighten($brand-color, 47%) !default;
+$color-title: $brand-color;
+$color-text: $brand-color;
 $color-error: #E86A6B;
 $color-success: #DAF9DE;
 
+// Sizes
 $container-width: 80%;

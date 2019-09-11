@@ -1,5 +1,8 @@
-// Overwrite variables
-@import "app/variables";
+@import "~super-reset-css/super-reset";
 
-// Theme
-@import '~admin-lte/build/scss/AdminLTE';
+@import "variables";
+
+@import "app/flexbox";
+@import "app/layout";
+
+@import "utils/helpers";
