@@ -242,9 +242,9 @@ input {
 }
 
 button {
-  color: white;
-  background-color: #7960A4;
+  background-color: #05307c;
   padding: 0.8rem 2rem;
+  color: #fff;
 }
 
 a {
@@ -253,9 +253,9 @@ a {
 }
 
 input {
-  background-color: #e6e2ee !important;
-  font: 500 1rem "Roboto", sans-serif !important;
-  color: #7960A4 !important;
+  background-color: #E8F0FE !important;
+  font: 400 16px Arial !important;
+  color: #0a57dd !important;
   padding: 1rem;
   width: 100%;
 }
@@ -319,7 +319,7 @@ html body main.guest .footer {
 
 html body main.guest .header {
   font-family: "Lobster", cursive;
-  color: #7960A4;
+  color: #05307c;
 }
 
 html body main.guest .content {

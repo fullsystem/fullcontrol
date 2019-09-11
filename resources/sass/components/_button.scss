@@ -1,5 +1,5 @@
 button {
-  color: lighten($brand-color, 60%);
   background-color: $brand-color;
-  padding: .8rem 2rem
+  padding: .8rem 2rem;
+  color: $white;
 }

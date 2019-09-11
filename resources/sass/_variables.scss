@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Lobster&display=swap');
 
-$brand-color: #7960A4 !default;
+// Color system
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$brand-color: darken(#E8F0FE, 70%) !default;
 
 // Fonts
 $font-title: 'Lobster', cursive;
@@ -16,8 +29,8 @@ $color-error: #E86A6B;
 $color-success: #DAF9DE;
 
 // Forms
-$input-background: darken($color-background, 7%);
-$input-color: $brand-color;
+$input-background: #E8F0FE;
+$input-color: darken(#E8F0FE, 50%);
 
 // Sizes
 $container-width: 80%;
