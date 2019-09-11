@@ -21,5 +21,18 @@ class SkeletonServiceProvider extends ServiceProvider
         // App assets
         $this->publishes([__DIR__ . '/../resources/compiled/css/app.css' => public_path('skeleton/css/app.css')], 'skeleton');
         $this->publishes([__DIR__ . '/../resources/compiled/js/app.js' => public_path('skeleton/js/app.js')], 'skeleton');
+
+        $this->publisheAssets();
+    }
+
+    /**
+     * Service Boot.
+     */
+    public function publisheAssets()
+    {
+        Artisan::call('vendor:publish', [
+            '--tag' => ['skeleton'],
+            '--force' => true
+        ]);
     }
 }
