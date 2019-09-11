@@ -3,6 +3,7 @@
 namespace Skeleton;
 
 use Artisan;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
 class SkeletonServiceProvider extends ServiceProvider
@@ -12,6 +13,10 @@ class SkeletonServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Config
+        $this->mergeConfigFrom(__DIR__ . '/../config/skeleton.php', 'skeleton');
+
+        // Views
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'skeleton');
 
         // Public assets
@@ -22,17 +27,17 @@ class SkeletonServiceProvider extends ServiceProvider
         $this->publishes([__DIR__ . '/../resources/compiled/css/app.css' => public_path('skeleton/css/app.css')], 'skeleton');
         $this->publishes([__DIR__ . '/../resources/compiled/js/app.js' => public_path('skeleton/js/app.js')], 'skeleton');
 
-        $this->publisheAssets();
+        // Automatically publish
+        $this->publishAssets();
     }
 
     /**
-     * Service Boot.
+     * Automatically publish assets.
      */
-    public function publisheAssets()
+    public function publishAssets()
     {
-        Artisan::call('vendor:publish', [
-            '--tag' => ['skeleton'],
-            '--force' => true
-        ]);
+        if (Config::get('skeleton.assets.automatically', true)) {
+            Artisan::call('vendor:publish', ['--tag' => ['skeleton'], '--force' => true, '--quiet' => true]);
+        }
     }
 }
