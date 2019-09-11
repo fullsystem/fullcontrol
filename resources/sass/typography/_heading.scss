@@ -4,7 +4,9 @@ $heading-scale: 0.4;
 @for $i from 1 through 6 {
   h#{$i} {
     font-size: $base-font-size + $heading-scale * (6 - $i) !important;
-    font-weight: 500;
+    letter-spacing: -1px;
+    font-weight: 400;
+    display: block;
     margin: 0;
   }
 }

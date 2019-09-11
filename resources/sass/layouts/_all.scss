@@ -1,10 +1,14 @@
-body {
-  font-family: $font-text;
-  flex-wrap: nowrap;
-  display: flex;
-  height: 100vh;
+html {
+  body {
+    font-family: $font-text;
+    height: 100vh;
 
-  @import "guest/all";
-  @import "app/all";
+    flex-wrap: nowrap;
+    display: flex;
+
+    @import "guest/all";
+    @import "app/all";
+    @import "helpers";
+  }
 }
 

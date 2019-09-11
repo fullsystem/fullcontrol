@@ -14,5 +14,19 @@ main.guest {
 
   .content {
     color: $color-text;
+
+    h6 {
+      margin-bottom: 1rem;
+    }
+
+    input {
+      margin-top: 1rem;
+    }
+
+    a {
+      text-align: right;
+      display: block;
+      margin: 1rem 0;
+    }
   }
 }

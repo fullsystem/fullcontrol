@@ -5,13 +5,19 @@ $brand-color: #7960A4 !default;
 // Fonts
 $font-title: 'Lobster', cursive;
 $font-text: 'Roboto', sans-serif;
+$font-size: 16px;
 
 // Colors
 $color-background: lighten($brand-color, 47%) !default;
 $color-title: $brand-color;
 $color-text: darken(#ffffff, 50%);
+$color-link: darken(#ffffff, 50%);
 $color-error: #E86A6B;
 $color-success: #DAF9DE;
+
+// Forms
+$input-background: darken($color-background, 7%);
+$input-color: $brand-color;
 
 // Sizes
 $container-width: 80%;

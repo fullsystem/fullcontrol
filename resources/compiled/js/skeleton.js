@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vagrant/code/fullsystem/skeleton/resources/js/skeleton.js */"./resources/js/skeleton.js");
-module.exports = __webpack_require__(/*! /home/vagrant/code/fullsystem/skeleton/resources/sass/skeleton.scss */"./resources/sass/skeleton.scss");
+__webpack_require__(/*! /home/rdehnhardt/Code/fullsystem/skeleton/resources/js/skeleton.js */"./resources/js/skeleton.js");
+module.exports = __webpack_require__(/*! /home/rdehnhardt/Code/fullsystem/skeleton/resources/sass/skeleton.scss */"./resources/sass/skeleton.scss");
 
 
 /***/ })
