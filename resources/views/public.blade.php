@@ -10,7 +10,7 @@
 
 @section('page-content')
     <section class="wrapper full-height">
-        <div class="image"></div>
+        <div class="image" style="background-image: url('{{ config('skeleton.assets.public.image') }}')"></div>
         <div class="page full-height">
             <header>{{ config('app.name', 'Skeleton') }}</header>
 

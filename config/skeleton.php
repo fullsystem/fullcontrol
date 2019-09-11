@@ -2,6 +2,9 @@
 
 return [
     'assets' => [
-        'automatically' => true
+        'automatically' => true,
+        'public' => [
+            'image' => '/skeleton/img/public-image.jpg'
+        ]
     ]
 ];
