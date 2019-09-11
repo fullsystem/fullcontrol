@@ -1,0 +1,18 @@
+main.guest {
+  .header, .content, .footer {
+    width: $container-width;
+
+    @include mobile-landscape-and-below {
+      width: 90% !important;
+    }
+  }
+
+  .header {
+    font-family: $font-title;
+    color: $brand-color;
+  }
+
+  .content {
+    color: $color-text;
+  }
+}

@@ -3,7 +3,9 @@
 @section('body-class', 'hold-transition sidebar-mini')
 
 @section('page-content')
-    <aside>
+    <aside class="app">
+        <input type="checkbox" id="aside-toggle" />
+
         <section class="brand">{{ config('app.name', 'Skeleton') }}</section>
 
         <nav>
@@ -18,7 +20,9 @@
         </section>
     </aside>
 
-    <main>MAIN</main>
+    <main class="app">
+        <label id="aside-toggle-button" for="aside-toggle">&#9776;</label>
+    </main>
 @endsection
 
 @push('styles')

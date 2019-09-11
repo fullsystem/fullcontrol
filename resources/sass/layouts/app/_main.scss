@@ -1,0 +1,7 @@
+main.app {
+  flex: 0 0 85%;
+
+  @include tablet-landscape-and-below {
+    flex: 0 0 100% !important;
+  }
+}

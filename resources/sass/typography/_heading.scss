@@ -1,0 +1,10 @@
+$base-font-size: 1.3rem;
+$heading-scale: 0.4;
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: $base-font-size + $heading-scale * (6 - $i) !important;
+    font-weight: 500;
+    margin: 0;
+  }
+}

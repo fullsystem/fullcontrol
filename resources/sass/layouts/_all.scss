@@ -1,0 +1,10 @@
+body {
+  font-family: $font-text;
+  flex-wrap: nowrap;
+  display: flex;
+  height: 100vh;
+
+  @import "guest/all";
+  @import "app/all";
+}
+

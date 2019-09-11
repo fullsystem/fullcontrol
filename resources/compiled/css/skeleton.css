@@ -190,3 +190,133 @@ canvas {
   display: inline-block;
 }
 
+h1 {
+  font-size: 3.3rem !important;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.9rem !important;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.5rem !important;
+  font-weight: 500;
+  margin: 0;
+}
+
+h4 {
+  font-size: 2.1rem !important;
+  font-weight: 500;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1.7rem !important;
+  font-weight: 500;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1.3rem !important;
+  font-weight: 500;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  flex-wrap: nowrap;
+  display: flex;
+  height: 100vh;
+}
+
+body aside.guest {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+body main.guest {
+  flex: 0 0 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+body aside.guest {
+  background-position: center;
+  background-size: cover;
+}
+
+body aside.guest .credits {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+body aside.guest .credits a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body aside.guest .credits a:hover {
+  color: white;
+}
+
+body main.guest .header,
+body main.guest .content,
+body main.guest .footer {
+  width: 80%;
+}
+
+@media only screen and (max-width: 480px) {
+  body main.guest .header,
+  body main.guest .content,
+  body main.guest .footer {
+    width: 90% !important;
+  }
+}
+
+body main.guest .header {
+  font-family: "Lobster", cursive;
+  color: #7960A4;
+}
+
+body main.guest .content {
+  color: gray;
+}
+
+body aside.app {
+  flex: 0 0 15%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body main.app {
+  flex: 0 0 85%;
+}
+
+@media only screen and (max-width: 1024px) {
+  body main.app {
+    flex: 0 0 100% !important;
+  }
+}
+
+body main.app {
+  flex: 0 0 85%;
+}
+
+@media only screen and (max-width: 1024px) {
+  body main.app {
+    flex: 0 0 100% !important;
+  }
+}
+

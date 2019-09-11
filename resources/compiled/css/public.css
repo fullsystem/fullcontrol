@@ -68,6 +68,7 @@ textarea {
 
 input {
   border: none;
+  box-sizing: border-box;
 }
 
 textarea {
@@ -425,10 +426,5 @@ canvas {
 
 .no-margin {
   margin: 0 !important;
-}
-
-input {
-  width: 100%;
-  box-sizing: border-box;
 }
 

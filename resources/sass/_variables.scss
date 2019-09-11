@@ -9,7 +9,7 @@ $font-text: 'Roboto', sans-serif;
 // Colors
 $color-background: lighten($brand-color, 47%) !default;
 $color-title: $brand-color;
-$color-text: $brand-color;
+$color-text: darken(#ffffff, 50%);
 $color-error: #E86A6B;
 $color-success: #DAF9DE;
 

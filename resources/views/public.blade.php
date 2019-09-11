@@ -1,32 +1,32 @@
 @extends('skeleton::empty')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('skeleton/css/public.css') }}">
+
 @endpush
 
 @push('scripts')
-    <script src="{{ asset('skeleton/js/public.js') }}"></script>
+
 @endpush
 
 @section('page-content')
-    <section class="wrapper full-height">
-        <div class="image" style="background-image: url('{{ config('skeleton.public.assets.image') }}')">
-            @if (config('skeleton.public.credits.url', null))
-                <section class="credits">
-                    Photo Credits: <a href="{{ config('skeleton.public.credits.url') }}" target="_blank">{{ config('skeleton.public.credits.text') }}</a>
-                </section>
-            @endif
-        </div>
-        <div class="page full-height">
-            <header>{{ config('app.name', 'Skeleton') }}</header>
+    <aside class="guest" style="background-image: url('{{ config('skeleton.public.assets.image') }}')">
+        @if (config('skeleton.public.credits.url', null))
+            <div class="credits">
+                Photo Credits: <a href="{{ config('skeleton.public.credits.url') }}" target="_blank">{{ config('skeleton.public.credits.text') }}</a>
+            </div>
+        @endif
+    </aside>
 
-            <main>
-                <h1>@yield('page-description')</h1>
+    <main class="guest">
+        <section class="header">
+            <h1>{{ config('app.name', 'Skeleton') }}</h1>
+        </section>
 
-                @yield('content')
-            </main>
+        <section class="content">
+            <h6>@yield('page-description')</h6>
+            @yield('content')
+        </section>
 
-            <footer>@yield('footer')</footer>
-        </div>
-    </section>
+        <section class="footer">@yield('footer')</section>
+    </main>
 @endsection
