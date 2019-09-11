@@ -14,12 +14,12 @@ class SkeletonServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'skeleton');
 
-        $this->publishes([__DIR__ . '/../resources/compiled/css/skeleton.css' => public_path('skeleton/css/app.css')], 'skeleton');
-        $this->publishes([__DIR__ . '/../resources/compiled/js/skeleton.js' => public_path('skeleton/js/app.js')], 'skeleton');
-    }
+        // Public assets
+        $this->publishes([__DIR__ . '/../resources/compiled/css/public.css' => public_path('skeleton/css/public.css')], 'skeleton');
+        $this->publishes([__DIR__ . '/../resources/compiled/js/public.js' => public_path('skeleton/js/public.js')], 'skeleton');
 
-    protected function publishAssets()
-    {
-        Artisan::call('vendor:publish', ['--tag' => 'skeleton', '--force' => true]);
+        // App assets
+        $this->publishes([__DIR__ . '/../resources/compiled/css/app.css' => public_path('skeleton/css/app.css')], 'skeleton');
+        $this->publishes([__DIR__ . '/../resources/compiled/js/app.js' => public_path('skeleton/js/app.js')], 'skeleton');
     }
 }
