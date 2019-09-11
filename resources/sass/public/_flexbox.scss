@@ -1,17 +1,27 @@
+@import "queries";
+
 .wrapper {
   display: flex;
   flex-wrap: nowrap;
 
   .image {
     flex: 0 0 70%;
+
+    @include tablet-landscape-and-below {
+      flex: 0 0 0 !important;
+    }
   }
 
   .page {
     flex: 0 0 30%;
 
+    @include tablet-landscape-and-below {
+      flex: 0 0 100% !important;
+    }
+
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     main {

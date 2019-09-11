@@ -18,6 +18,19 @@
 .d-inline-flex { display: inline-flex !important; }
 .d-inline-block { display: inline-block !important; }
 
+.btn-link {
+  border: none !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline;
+
+  &:hover {
+    color: $color-title !important;
+    background: none !important;
+  }
+}
+
 input {
   width: 100%;
   -webkit-box-sizing: border-box;

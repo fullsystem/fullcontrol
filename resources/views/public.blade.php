@@ -15,7 +15,8 @@
             <header>{{ config('app.name', 'Skeleton') }}</header>
 
             <main>
-                <cite>@yield('page-description')</cite>
+                <h1>@yield('page-description')</h1>
+
                 @yield('content')
             </main>
 

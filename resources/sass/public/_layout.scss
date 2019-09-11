@@ -1,8 +1,7 @@
 @import "variables";
+@import "queries";
 
 .wrapper {
-  width: 100%;
-
   .image {
     background: url($bg-image) center;
     background-size: cover;
@@ -10,6 +9,10 @@
 
   header, main, footer {
     width: $container-width;
+
+    @include mobile-landscape-and-below {
+      width: 90% !important;
+    }
   }
 
   header {
@@ -21,41 +24,60 @@
   main {
     font-family: $font-text;
     color: $color-text;
-    font-size: 1.2rem;
 
-    cite {
+    h1 {
+      letter-spacing: -.7px;
       margin-bottom: 1rem;
       font-size: 1.3rem;
-      display: block;
+      font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 1rem;
     }
 
     a {
       color: $color-text;
-      font-weight: 400;
-
-      &:hover {
-        color: darken($color-text, 15%);
-      }
+      font-size: .9rem;
+      margin-top: 1rem;
+      display: block;
     }
 
     input {
-      background: lighten($color-text, 45%);
-      font-family: $font-text;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      font-weight: 500;
+      background-color: lighten($color-text, 45%);
+      line-height: 1.1rem;
+      color: $color-text;
+      font-weight: 700;
+      margin-top: 1rem;
+      font-size: 1rem;
       padding: 1rem;
     }
 
     button {
-      color: lighten($color-title, 70%);
-      background: $color-title;
-      font-family: $font-text;
-      padding: .8rem 0;
-      border-radius: 5px;
+      border: 2px solid $color-title;
+      color: $color-title;
       margin-top: 1rem;
+      cursor: pointer;
+      display: block;
+      padding: .7rem;
       width: 100%;
+
+      &:hover {
+        color: lighten($color-title, 50%);
+        background: $color-title;
+      }
+    }
+
+    .invalid-feedback {
+      font-family: $font-text;
+      color: $color-error;
+      font-weight: 100;
+      font-size: .8rem;
+    }
+
+    .is-invalid {
+      background: lighten($color-error, 47%);
+      color: lighten($color-error, 20);
     }
   }
 

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700|Lobster&display=swap);html {
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Lobster&display=swap);html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -198,77 +198,29 @@ canvas {
   flex: 0 0 70%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .wrapper .image {
+    flex: 0 0 0 !important;
+  }
+}
+
 .wrapper .page {
   flex: 0 0 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper .page {
+    flex: 0 0 100% !important;
+  }
 }
 
 .wrapper .page main {
   display: flex;
   flex-direction: column;
-}
-
-/*
-  # Low Resolution Tablets, Mobiles (Landscape)
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .image {
-    flex: 0 0 0 !important;
-  }
-
-  .page {
-    flex: 0 0 100% !important;
-  }
-}
-
-/*
-  # Most of the Smartphones Mobiles (Portrait)
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .image {
-    flex: 0 0 0 !important;
-  }
-
-  .page {
-    flex: 0 0 100% !important;
-  }
-}
-
-/*
-  # Device = Tablets, Ipads (portrait)
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .image {
-    flex: 0 0 0 !important;
-  }
-
-  .page {
-    flex: 0 0 100% !important;
-  }
-}
-
-/*
-  # Tablets, Ipads (landscape)
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .image {
-    flex: 0 0 0 !important;
-  }
-
-  .page {
-    flex: 0 0 100% !important;
-  }
-}
-
-.wrapper {
-  width: 100%;
 }
 
 .wrapper .image {
@@ -282,51 +234,78 @@ canvas {
   width: 80%;
 }
 
+@media only screen and (max-width: 480px) {
+  .wrapper header,
+  .wrapper main,
+  .wrapper footer {
+    width: 90% !important;
+  }
+}
+
 .wrapper header {
   font-family: "Lobster", cursive;
-  color: #2d5830;
+  color: #7960A4;
   font-size: 3rem;
 }
 
 .wrapper main {
   font-family: "Roboto", sans-serif;
   color: #7f7f7f;
-  font-size: 1.2rem;
 }
 
-.wrapper main cite {
+.wrapper main h1 {
+  letter-spacing: -0.7px;
   margin-bottom: 1rem;
   font-size: 1.3rem;
-  display: block;
+  font-weight: 500;
+}
+
+.wrapper main p {
+  margin-bottom: 1rem;
 }
 
 .wrapper main a {
   color: #7f7f7f;
-  font-weight: 400;
-}
-
-.wrapper main a:hover {
-  color: #595959;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  display: block;
 }
 
 .wrapper main input {
-  background: #f2f2f2;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  font-weight: 500;
+  background-color: #f2f2f2;
+  line-height: 1.1rem;
+  color: #7f7f7f;
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 1rem;
   padding: 1rem;
 }
 
 .wrapper main button {
-  color: #f2f8f2;
-  background: #2d5830;
-  font-family: "Roboto", sans-serif;
-  padding: 0.8rem 0;
-  border-radius: 5px;
+  border: 2px solid #7960A4;
+  color: #7960A4;
   margin-top: 1rem;
+  cursor: pointer;
+  display: block;
+  padding: 0.7rem;
   width: 100%;
+}
+
+.wrapper main button:hover {
+  color: white;
+  background: #7960A4;
+}
+
+.wrapper main .invalid-feedback {
+  font-family: "Roboto", sans-serif;
+  color: red;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.wrapper main .is-invalid {
+  background: #fff0f0;
+  color: #ff6666;
 }
 
 .wrapper footer a {
@@ -339,60 +318,12 @@ canvas {
   color: #333333;
 }
 
-/*
-  # Low Resolution Tablets, Mobiles (Landscape)
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .wrapper header,
-  .wrapper main,
-  .wrapper footer {
-    padding: 100px;
-  }
-}
-
-/*
-  # Most of the Smartphones Mobiles (Portrait)
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .wrapper header,
-  .wrapper main,
-  .wrapper footer {
-    padding: 50px 20px;
-  }
-}
-
-/*
-  # Device = Tablets, Ipads (portrait)
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .wrapper header,
-  .wrapper main,
-  .wrapper footer {
-    padding: 50px 150px;
-  }
-}
-
-/*
-  # Tablets, Ipads (landscape)
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .wrapper header,
-  .wrapper main,
-  .wrapper footer {
-    padding: 50px 150px;
-  }
-}
-
 .full-height {
   height: 100vh;
 }
 
 .background-title {
-  background-color: #2d5830;
+  background-color: #7960A4;
 }
 
 .background-text {
@@ -400,7 +331,7 @@ canvas {
 }
 
 .color-title {
-  color: #2d5830;
+  color: #7960A4;
 }
 
 .color-text {
@@ -433,6 +364,19 @@ canvas {
 
 .d-inline-block {
   display: inline-block !important;
+}
+
+.btn-link {
+  border: none !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline;
+}
+
+.btn-link:hover {
+  color: #7960A4 !important;
+  background: none !important;
 }
 
 input {
