@@ -37,7 +37,7 @@ class SkeletonServiceProvider extends ServiceProvider
     public function publishAssets()
     {
         if (Config::get('skeleton.assets.automatically', true)) {
-            Artisan::call('vendor:publish', ['--tag' => ['skeleton'], '--force' => true, '--quiet' => true]);
+            Artisan::call('vendor:publish', ['--tag' => ['skeleton'], '--force' => true]);
         }
     }
 }
