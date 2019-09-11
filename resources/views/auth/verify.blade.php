@@ -11,12 +11,17 @@
     @endif
 
     <p>{{ __('Before proceeding, please check your email for a verification link.') }}</p>
-    <p>
-        {{ __('If you did not receive the email') }},
 
-        <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
-            @csrf
-            <button type="submit" class="btn-link">{{ __('click here to request another') }}</button>
-        </form>
-    </p>
+    <hr class="divider" />
+
+    <p class="text-center">{{ __('If you did not receive the email') }}</p>
+
+    <form method="POST" action="{{ route('verification.resend') }}">
+        @csrf
+        <button type="submit">{{ __('click here to request another') }}</button>
+    </form>
+@endsection
+
+@section('footer')
+    <a href="{{ route('login') }}">{{ __('Back to login') }}</a>
 @endsection

@@ -283,6 +283,7 @@ canvas {
 
 .wrapper main button {
   border: 2px solid #7960A4;
+  text-transform: lowercase;
   color: #7960A4;
   margin-top: 1rem;
   cursor: pointer;
@@ -298,14 +299,14 @@ canvas {
 
 .wrapper main .invalid-feedback {
   font-family: "Roboto", sans-serif;
-  color: red;
+  color: #E86A6B;
   font-weight: 100;
   font-size: 0.8rem;
 }
 
 .wrapper main .is-invalid {
-  background: #fff0f0;
-  color: #ff6666;
+  background: white;
+  color: #f6c2c3;
 }
 
 .wrapper footer a {
@@ -356,22 +357,43 @@ canvas {
 
 .d-inline {
   display: inline !important;
+  width: auto !important;
 }
 
 .d-inline-flex {
   display: inline-flex !important;
+  width: auto !important;
 }
 
 .d-inline-block {
   display: inline-block !important;
+  width: auto !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.divider {
+  border-color: #cccccc;
+  border-style: double;
+  border-right: none;
+  border-left: none;
+  margin: 2rem auto;
+  height: 5px;
+  width: 70%;
 }
 
 .btn-link {
+  display: inline-block !important;
   border: none !important;
-  width: auto !important;
   padding: 0 !important;
   margin: 0 !important;
-  display: inline;
 }
 
 .btn-link:hover {
@@ -379,8 +401,15 @@ canvas {
   background: none !important;
 }
 
-input {
-  width: 100%;
-  box-sizing: border-box;
+.alert {
+  background: #f2f2f2;
+  margin-bottom: 1rem;
+  display: block;
+  padding: 1rem;
+}
+
+.alert-success {
+  background: #DAF9DE !important;
+  color: #1aa02b;
 }
 

@@ -13,12 +13,12 @@
     <form method="POST" action="{{ route('password.email') }}" autocomplete="off">
         @csrf
 
-        <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="false" placeholder="{{ __('Email') }}" autofocus>
+        <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="false" placeholder="{{ __('your email') }}" autofocus>
         @error('email')
         <span class="invalid-feedback" role="alert">{{ $message }}</span>
         @enderror
 
-        <button type="submit">{{ __('Send Password Reset Link') }}</button>
+        <button type="submit">{{ __('Send reset link') }}</button>
     </form>
 @endsection
 
