@@ -19,14 +19,10 @@ class SkeletonServiceProvider extends ServiceProvider
         // Views
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'skeleton');
 
-        // Public assets
+        // Assets
         $this->publishes([__DIR__ . '/../resources/img/public-image.jpg' => public_path('skeleton/img/public-image.jpg')], 'skeleton');
-        $this->publishes([__DIR__ . '/../resources/compiled/css/public.css' => public_path('skeleton/css/public.css')], 'skeleton');
-        $this->publishes([__DIR__ . '/../resources/compiled/js/public.js' => public_path('skeleton/js/public.js')], 'skeleton');
-
-        // App assets
-        $this->publishes([__DIR__ . '/../resources/compiled/css/app.css' => public_path('skeleton/css/app.css')], 'skeleton');
-        $this->publishes([__DIR__ . '/../resources/compiled/js/app.js' => public_path('skeleton/js/app.js')], 'skeleton');
+        $this->publishes([__DIR__ . '/../resources/compiled/css/skeleton.css' => public_path('skeleton/css/skeleton.css')], 'skeleton');
+        $this->publishes([__DIR__ . '/../resources/compiled/js/skeleton.js' => public_path('skeleton/js/skeleton.js')], 'skeleton');
 
         // Automatically publish
         $this->publishAssets();
