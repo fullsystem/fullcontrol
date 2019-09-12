@@ -1,0 +1,16 @@
+.credits {
+  font-family: $font-family-sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.2);
+  font-size: .8rem;
+  padding: 10px;
+
+  a {
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover {
+      text-decoration: none !important;
+      color: $primary !important;
+    }
+  }
+}

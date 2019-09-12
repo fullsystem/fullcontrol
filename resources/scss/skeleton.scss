@@ -1,11 +1,12 @@
-@import "~super-reset-css/super-reset";
-
 // Configuration
 @import "variables";
 @import "mixins";
+@import "reboot";
 @import "fonts";
+
+// Vendors
+@import "~bootstrap";
 
 // Theme styles
 @import "typography/all";
-@import "components/all";
 @import "layouts/all";

@@ -18,15 +18,23 @@
     </aside>
 
     <main class="guest">
-        <section class="header">
-            <h1>{{ config('app.name', 'Skeleton') }}</h1>
+        <section class="brand">
+            <div class="container">
+                <h1>{{ config('app.name', 'Skeleton') }}</h1>
+            </div>
         </section>
 
         <section class="content">
-            <h6>@yield('page-description')</h6>
-            @yield('content')
+            <div class="container">
+                <h6>@yield('page-description')</h6>
+                @yield('content')
+            </div>
         </section>
 
-        <section class="footer">@yield('footer')</section>
+        <section class="footer">
+            <div class="container">
+                @yield('footer')
+            </div>
+        </section>
     </main>
 @endsection

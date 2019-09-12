@@ -4,9 +4,11 @@
 
 @section('page-content')
     <aside class="app">
-        <input type="checkbox" id="aside-toggle" />
+        <input type="checkbox" id="is-toggle" />
 
-        <section class="brand">{{ config('app.name', 'Skeleton') }}</section>
+        <section class="brand">
+            <h3>{{ config('app.name', 'Skeleton') }}</h3>
+        </section>
 
         <nav>
             <ul>
@@ -16,19 +18,13 @@
         </nav>
 
         <section class="bottom">
-            <a href="/logout">Logout</a>
+            <a href="/logout">
+                <i class="far fa-power-off"></i>
+            </a>
         </section>
     </aside>
 
     <main class="app">
-        <label id="aside-toggle-button" for="aside-toggle">&#9776;</label>
+        <label id="aside-toggle" for="is-toggle">&#9776;</label>
     </main>
 @endsection
-
-@push('styles')
-    <link rel="stylesheet" href="{{ asset('skeleton/css/app.css') }}">
-@endpush
-
-@push('scripts')
-    <script src="{{ asset('skeleton/js/app.js') }}"></script>
-@endpush

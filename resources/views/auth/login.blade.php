@@ -7,23 +7,31 @@
     <form method="POST" action="{{ route('login') }}" autocomplete="off">
         @csrf
 
-        <input name="email" type="email" class="@error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="none" placeholder="{{ __('your email') }}" autofocus>
-        @error('email')
-        <span class="invalid-feedback" role="alert">{{ $message }}</span>
-        @enderror
+        <div class="form-group">
+            <label for="email">{{ __('email address') }}</label>
+            <input id="email" name="email" type="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="{{ __('Email Address') }}" autofocus />
 
-        <input name="password" type="password" class="@error('password') is-invalid @enderror" placeholder="{{ __('your password') }}" required autocomplete="current-password">
-        @error('password')
-        <span class="invalid-feedback" role="alert">{{ $message }}</span>
-        @enderror
+            @error('email')
+            <small class="form-text text-muted">{{ $message }}</small>
+            @enderror
+        </div>
 
-        @if (Route::has('password.request'))
-            <div class="text-right">
+        <div class="form-group">
+            <label for="password">{{ __('password') }}</label>
+            <input id="password" name="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="{{ __('Password') }}" />
+
+            @error('password')
+            <small class="form-text text-muted">{{ $message }}</small>
+            @enderror
+        </div>
+
+        <div class="grid">
+            <button type="submit" class="btn btn-primary">{{ __('Sign In') }}</button>
+
+            @if (Route::has('password.request'))
                 <a href="{{ route('password.request') }}">{{ __('I forgot my password') }}</a>
-            </div>
-        @endif
-
-        <button type="submit">{{ __('Sign In') }}</button>
+            @endif
+        </div>
     </form>
 @endsection
 

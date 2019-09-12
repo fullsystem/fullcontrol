@@ -97,9 +97,9 @@
 
 /***/ }),
 
-/***/ "./resources/sass/skeleton.scss":
+/***/ "./resources/scss/skeleton.scss":
 /*!**************************************!*\
-  !*** ./resources/sass/skeleton.scss ***!
+  !*** ./resources/scss/skeleton.scss ***!
   \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -110,13 +110,13 @@
 
 /***/ 0:
 /*!***********************************************************************!*\
-  !*** multi ./resources/js/skeleton.js ./resources/sass/skeleton.scss ***!
+  !*** multi ./resources/js/skeleton.js ./resources/scss/skeleton.scss ***!
   \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/rdehnhardt/Code/fullsystem/skeleton/resources/js/skeleton.js */"./resources/js/skeleton.js");
-module.exports = __webpack_require__(/*! /home/rdehnhardt/Code/fullsystem/skeleton/resources/sass/skeleton.scss */"./resources/sass/skeleton.scss");
+module.exports = __webpack_require__(/*! /home/rdehnhardt/Code/fullsystem/skeleton/resources/scss/skeleton.scss */"./resources/scss/skeleton.scss");
 
 
 /***/ })
