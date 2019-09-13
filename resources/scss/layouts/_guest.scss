@@ -62,6 +62,18 @@ main.guest {
                 font-weight: 500;
             }
         }
+
+        small {
+            color: rgba(220, 53, 69, 0.7) !important;
+        }
+
+        .is-invalid, .was-validated .form-control:invalid {
+            background-position: 98% calc(1em + .1975rem);
+
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
     }
 
     .grid {

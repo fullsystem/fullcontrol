@@ -19,7 +19,7 @@
 
         <section class="bottom">
             <a href="/logout">
-                <i class="far fa-power-off"></i>
+                <i class="fas fa-power-off"></i>
             </a>
         </section>
     </aside>
