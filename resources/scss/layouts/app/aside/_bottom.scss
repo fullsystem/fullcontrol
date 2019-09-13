@@ -1,0 +1,14 @@
+.bottom {
+    padding: 1rem 50px;
+    margin-top: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: .8rem;
+        color: $gray-500;
+    }
+}

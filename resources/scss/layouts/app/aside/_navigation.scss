@@ -1,0 +1,21 @@
+.navigation {
+    margin-left: 50px;
+    list-style: none;
+
+    li {
+        a {
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $gray-900;
+            font-size: .8rem;
+            padding: 1rem 0;
+            display: block;
+
+            i {
+                margin-right: .5rem;
+                color: $gray-600;
+                font-size: 1rem;
+            }
+        }
+    }
+}

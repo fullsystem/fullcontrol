@@ -1,0 +1,27 @@
+.profile {
+    margin: 3rem 50px 2rem 50px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+        border-radius: 80px;
+        width: 80px;
+    }
+
+    h6 {
+        font-weight: 500 !important;
+        font-size: 1rem !important;
+        padding-left: 1rem;
+        color: $gray-700;
+    }
+
+    a {
+        font-size: 1rem !important;
+        margin-left: auto;
+        color: $gray-600;
+        padding: 1rem;
+    }
+}
