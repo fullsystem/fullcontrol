@@ -4,7 +4,7 @@
 
 @section('page-content')
     <aside class="app">
-        <input type="checkbox" id="is-toggle" />
+        <input type="checkbox" id="toggled" />
 
         <section class="brand">
             <h3>{{ config('app.name', 'Skeleton') }}</h3>
@@ -25,6 +25,6 @@
     </aside>
 
     <main class="app">
-        <label id="aside-toggle" for="is-toggle">&#9776;</label>
+        <label id="aside-toggle" for="toggled">&#9776;</label>
     </main>
 @endsection

@@ -18,7 +18,7 @@
 
     <form method="POST" action="{{ route('verification.resend') }}">
         @csrf
-        <button type="submit">{{ __('click here to request another') }}</button>
+        <button type="submit" class="btn btn-primary btn-block">{{ __('click here to request another') }}</button>
     </form>
 @endsection
 
