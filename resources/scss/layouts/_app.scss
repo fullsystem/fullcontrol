@@ -1,3 +1,5 @@
+@import "app/toggled";
+
 aside.app {
     flex: 0 0 20%;
     display: flex;
@@ -7,14 +9,6 @@ aside.app {
     @import "app/aside/profile";
     @import "app/aside/navigation";
     @import "app/aside/bottom";
-}
-
-#aside-app-toggled {
-    display: none;
-
-    &:checked + aside.app {
-        background-color: #1aa02b;
-    }
 }
 
 main.app {

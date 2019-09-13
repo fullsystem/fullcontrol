@@ -1,3 +1,14 @@
-#toggled {
-  display: block;
+#aside-app-toggled {
+    display: none;
+
+    &:checked + aside.app {
+        background-color: #1aa02b;
+    }
 }
+
+@media (min-width: 1024px) {
+    #aside-toggle {
+        display: none;
+    }
+}
+
