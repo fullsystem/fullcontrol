@@ -1,20 +1,87 @@
 aside.app {
-  flex: 0 0 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
-  #toggled {
-    #toggled:checked + .app {
-      background-color: #1aa02b;
+    .profile {
+        margin: 3rem 50px 2rem 50px;
+
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+            border-radius: 80px;
+            width: 80px;
+        }
+
+        h6 {
+            font-weight: 500 !important;
+            font-size: 1rem !important;
+            padding-left: 1rem;
+            color: $gray-700;
+        }
+
+        a {
+            font-size: 1rem !important;
+            margin-left: auto;
+            color: $gray-600;
+            padding: 1rem;
+        }
     }
-  }
+
+    .navigation {
+        margin-left: 50px;
+        list-style: none;
+
+        li {
+            a {
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $gray-900;
+                font-size: .8rem;
+                padding: 1rem 0;
+                display: block;
+
+                i {
+                    margin-right: .5rem;
+                    color: $gray-600;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        padding: 1rem 50px;
+        margin-top: auto;
+
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: .8rem;
+            color: $gray-500;
+        }
+    }
+}
+
+#aside-app-toggled {
+    display: none;
+
+    &:checked + aside.app {
+        background-color: #1aa02b;
+    }
 }
 
 main.app {
-  flex: 0 0 85%;
+    flex: 0 0 80%;
 
-  @include tablet-landscape-and-below {
-    flex: 0 0 100% !important;
-  }
+    @include tablet-landscape-and-below {
+        flex: 0 0 100% !important;
+    }
 }

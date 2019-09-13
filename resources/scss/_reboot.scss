@@ -22,3 +22,14 @@ input[type=number]:focus,
   box-shadow: inset 0 0 0 #ddd;
   border-color: $primary;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -3,28 +3,29 @@
 @section('body-class', 'hold-transition sidebar-mini')
 
 @section('page-content')
-    <aside class="app">
-        <input type="checkbox" id="toggled" />
+    <input type="checkbox" id="aside-app-toggled"/>
 
-        <section class="brand">
-            <h3>{{ config('app.name', 'Skeleton') }}</h3>
+    <aside class="app">
+        <section class="profile">
+            <img src="/skeleton/img/no-profile.jpg"/>
+            <h6>{{ Auth::user()->name }}</h6>
         </section>
 
-        <nav>
-            <ul>
-                <li><a href="#">Menu Item</a></li>
-                <li><a href="#">Menu Item</a></li>
-            </ul>
-        </nav>
+        <ul class="navigation">
+            <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-book-open"></i> Posts</a></li>
+            <li><a href="#"><i class="fas fa-signal"></i> Notifications</a></li>
+            <li><a href="#"><i class="fas fa-comment-dollar"></i> Sales</a></li>
+            <li><a href="#"><i class="fas fa-chart-bar"></i> Reports</a></li>
+        </ul>
 
         <section class="bottom">
-            <a href="/logout">
-                <i class="fas fa-power-off"></i>
-            </a>
+            <a href="/settings"><i class="fas fa-cog"></i> Settings</a>
+            <a href="/logout"><i class="fas fa-power-off"></i> Logout</a>
         </section>
     </aside>
 
     <main class="app">
-        <label id="aside-toggle" for="toggled">&#9776;</label>
+        <label id="aside-toggle" for="aside-app-toggled">&#9776;</label>
     </main>
 @endsection

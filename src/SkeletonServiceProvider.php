@@ -21,8 +21,8 @@ class SkeletonServiceProvider extends ServiceProvider
 
         // Assets
         $this->publishes([__DIR__ . '/../resources/img' => public_path('skeleton/img')], 'skeleton');
-        $this->publishes([__DIR__ . '/../resources/compiled/fonts' => public_path('skeleton/fonts')], 'skeleton');
-        $this->publishes([__DIR__ . '/../resources/compiled/css' => public_path('skeleton/css')], 'skeleton');
+        $this->publishes([__DIR__ . '/../resources/compiled/fonts' => public_path('skeleton/webfonts')], 'skeleton');
         $this->publishes([__DIR__ . '/../resources/compiled/js' => public_path('skeleton/js')], 'skeleton');
+        $this->publishes([__DIR__ . '/../resources/compiled/css' => public_path('skeleton/css')], 'skeleton');
     }
 }

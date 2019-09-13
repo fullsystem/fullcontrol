@@ -1,7 +1,8 @@
 node_modules
-vendor
 package-lock.json
 router.web.stub
 mix-manifest.json
 .idea
+
+./vendor
 ./fonts
