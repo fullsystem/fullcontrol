@@ -4,4 +4,4 @@ package-lock.json
 router.web.stub
 mix-manifest.json
 .idea
-fonts
+./fonts
