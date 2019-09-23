@@ -7,8 +7,8 @@ return [
             'image' => '/skeleton/img/public-image.jpg'
         ],
         'credits' => [
-            'url' => 'https://instagram.com/renato.dehnhardt',
-            'text' => 'Renato Dehnhardt',
+            'url' => 'https://unsplash.com/@robertlukeman   ',
+            'text' => 'Robert Lukeman',
         ]
     ]
 ];

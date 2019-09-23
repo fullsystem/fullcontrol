@@ -1,0 +1,13 @@
+#aside-toggle {
+    display: block;
+}
+
+aside.app {
+    position: absolute;
+    display: none;
+    width: 80%;
+}
+
+main.app {
+    flex: 0 0 100% !important;
+}

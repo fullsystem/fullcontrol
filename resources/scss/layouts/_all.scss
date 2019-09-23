@@ -1,18 +1,18 @@
 @import "overwrite/all";
 
 html {
-  body {
-    height: 100vh;
+    body {
+        height: 100vh;
 
-    flex-wrap: nowrap;
-    display: flex;
+        flex-wrap: nowrap;
+        display: flex;
 
-    .brand {
-      font-family: $font-family-monospace;
-      color: $primary;
+        .brand {
+            font-family: $font-family-monospace;
+            color: $primary;
+        }
+
+        @import "guest";
+        @import "app";
     }
-
-    @import "guest";
-    @import "app";
-  }
 }

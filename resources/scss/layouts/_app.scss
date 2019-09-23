@@ -1,10 +1,17 @@
-@import "app/toggled";
+#aside-app-toggled {
+    display: none;
+
+    &:checked + aside.app {
+        background-color: #1aa02b;
+    }
+}
 
 aside.app {
     flex: 0 0 20%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 1rem;
 
     @import "app/aside/profile";
     @import "app/aside/navigation";
@@ -14,7 +21,19 @@ aside.app {
 main.app {
     flex: 0 0 80%;
 
-    @include tablet-landscape-and-below {
-        flex: 0 0 100% !important;
-    }
+    @import "app/main/header";
+    @import "app/main/content";
+    @import "app/main/footer";
+}
+
+@include desktop-and-up {
+    @import "app/web";
+}
+
+@include tablet-portrait-and-below {
+    @import "app/tablet";
+}
+
+@include mobile-portrait-and-below {
+    @import "app/mobile";
 }

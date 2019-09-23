@@ -12,7 +12,7 @@
     <aside class="guest" style="background-image: url('{{ config('skeleton.public.assets.image') }}')">
         @if (config('skeleton.public.credits.url', null))
             <div class="credits">
-                Photo by: <a href="{{ config('skeleton.public.credits.url') }}" target="_blank">{{ config('skeleton.public.credits.text') }}</a>
+                Photo: <a href="{{ config('skeleton.public.credits.url') }}" target="_blank">{{ config('skeleton.public.credits.text') }}</a>
             </div>
         @endif
     </aside>

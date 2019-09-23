@@ -26,6 +26,17 @@
     </aside>
 
     <main class="app">
-        <label id="aside-toggle" for="aside-app-toggled">&#9776;</label>
+        <section class="header">
+            <label id="aside-toggle" for="aside-app-toggled"><i class="fas fa-bars"></i></label>
+            <a href="#"><i class="fas fa-th"></i></a>
+        </section>
+
+        <section class="content">
+            @yield('content')
+        </section>
+
+        <section class="footer">
+
+        </section>
     </main>
 @endsection
